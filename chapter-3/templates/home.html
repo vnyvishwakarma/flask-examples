@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Vinay</title>
+  <meta name="description" content="The HTML5 Vinay">
+
+</head>
+
+<body>
+  {% for employee in employees %}
+
+    <h1> {{ employee.name }}  </h1> 
+    <p> He works for {{ employee.company }} as a  {{ employee.title }} </p> 
+    
+  {% endfor %}
+</body>
+</html>
